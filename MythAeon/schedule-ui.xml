@@ -264,7 +264,7 @@
 		            <conflictingcolor>#ff6600</conflictingcolor>
 		            <cutdown>no</cutdown>
 		            <multiline>no</multiline>
-		            <textoffset>17,0</textoffset>
+		            <textoffset>17,20</textoffset>
 		            <recordstatus type="SingleRecord" image="images/icons/guide/gg-rs-single.png"></recordstatus>
 		            <recordstatus type="TimeslotRecord" image="images/icons/guide/gg-rs-timeslot.png"></recordstatus>
 		            <recordstatus type="ChannelRecord" image="images/icons/guide/gg-rs-channel.png"></recordstatus>
@@ -308,7 +308,7 @@
 				                  <filename>images/shared/settings_radiobuttonoff.png</filename>
 				              </imagetype>
 				              <textarea name="buttontext"  from="textarea_info">
-				                  <area>110,0,710,83</area>
+				                  <area>110,0,710,73</area>
 				                  <align>left,bottom</align>
 				                  <multiline>no</multiline>
 				              </textarea>
@@ -351,9 +351,9 @@
 		        </imagetype>
 	
 		        <imagetype name="video">
-		            <area>45,44,690,388</area>716
-		            <filename>images/backgrounds/other/fallback_livetv.jpg</filename>
-		            <mask>images/shared/multiplex_tvmask_bing.png</mask>
+		            <area>191,175,684,382</area>
+<!--		            <filename>images/backgrounds/other/fallback_livetv.jpg</filename>
+		            <mask>images/shared/multiplex_tvmask_bing.png</mask> -->
 		        </imagetype>
 
 		        <textarea name="titlesubtitle" from="textarea_settings_title">
