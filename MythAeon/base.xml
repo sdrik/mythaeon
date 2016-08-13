@@ -1487,7 +1487,15 @@
                    <filename>images/shared/multiplex_border.png</filename>
                    <preserveaspect>no</preserveaspect>
                </imagetype>
-               <imagetype name="coverart">
+               <imagetype name="screenshot" depends="!nodetype">
+                   <area>8,10,160,247</area>
+                   <alpha>255</alpha>
+                   <filename>images/shared/DefaultVideoBigPosterLong.png</filename>
+                   <mask>images/shared/multiplex_mask.png</mask>
+                   <preserveaspect>yes</preserveaspect>
+                   <reflection shear="0" scale="50" length="16" spacing="0" />
+               </imagetype>
+               <imagetype name="coverart" depends="nodetype|!screenshot">
                    <area>8,10,160,247</area>
                    <alpha>255</alpha>
                    <filename>images/shared/DefaultVideoBigPosterLong.png</filename>
@@ -1510,13 +1518,12 @@
                    <filename>images/shared/multiplex_glass.png</filename>
                    <preserveaspect>no</preserveaspect>
                </imagetype>
-               <imagetype name="previewlabel" depends="!coverart">
+               <imagetype name="previewlabel" depends="!screenshot&amp;!coverart">
                    <area>12,245,150,90</area>
                    <alpha>255</alpha>
                    <filename>images/shared/multiplex_labelblock.png</filename>
                    <preserveaspect>no</preserveaspect>
                </imagetype>
-<!--
                <statetype name="nodetype">
                    <area>0,0,110,159</area>
                    <state name="subfolder">
@@ -1536,8 +1543,7 @@
                        </imagetype>
                    </state>
                </statetype>
--->            
-               <textarea name="buttontext" from="textarea_plot" depends="!coverart">
+               <textarea name="buttontext" from="textarea_plot" depends="!screenshot&amp;!coverart">
                    <area>17,245,140,50</area>
                    <font>Font_Info_20_White</font>
                    <multiline>yes</multiline>
@@ -1553,7 +1559,14 @@
                    <filename>images/shared/multiplex_border.png</filename>
                    <preserveaspect>no</preserveaspect>
                </imagetype>
-               <imagetype name="coverart">
+               <imagetype name="screenshot" depends="!nodetype">
+                   <area>0,0,194,300</area>
+                   <alpha>255</alpha>
+                   <preserveaspect>yes</preserveaspect>
+                   <filename>images/shared/DefaultVideoBigPosterLong.png</filename>
+                   <mask>images/shared/multiplex_mask_big.png</mask>
+               </imagetype>
+               <imagetype name="coverart" depends="nodetype|!screenshot">
                    <area>0,0,194,300</area>
                    <alpha>255</alpha>
                    <preserveaspect>no</preserveaspect>
@@ -1566,7 +1579,6 @@
                    <filename>images/shared/multiplex_glass.png</filename>
                    <preserveaspect>no</preserveaspect>
                </imagetype>
-<!--
                <statetype name="nodetype">
                    <area>-8,0,138,199</area>
                    <state name="subfolder">
@@ -1586,7 +1598,6 @@
                        </imagetype>
                    </state>
                </statetype>
--->              
            </state>
            <state name="inactive" from ="active">
                <alpha>0</alpha>

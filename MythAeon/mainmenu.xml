@@ -4,20 +4,28 @@
     <button>
         <type>TV_WATCH_TV</type>
         <text>Television</text>
+	<description>Direct</description>
         <action>TV_WATCH_LIVE</action>
     </button>
 
     <button>
         <type>TV_WATCH_RECORDINGS</type>
-        <text>TV Shows</text>
-        <description>Play any of your recorded programs</description>
-        <action>TV_WATCH_RECORDING</action>
+        <text>Kids</text>
+        <description>Programmes enregistrés</description>
+        <action>TV_WATCH_RECORDING Kids</action>
+    </button>
+
+    <button>
+        <type>TV_WATCH_RECORDINGS</type>
+        <text>Divers</text>
+        <description>Programmes enregistrés</description>
+        <action>TV_WATCH_RECORDING Default</action>
     </button>
 
     <button>
         <type>VIDEO_BROWSER</type>
-        <text>Movies</text>
-        <description>Browse your movie library</description>
+        <text>Médiathèque</text>
+	<description>Films, séries, dessins-animés, ...</description>
         <action>JUMP Video Default</action>
     </button>
 
@@ -27,13 +35,6 @@
         <description>Browse your music library</description>
         <action>JUMP Play music</action>
         <depends>mythmusic</depends>
-    </button>
-
-    <button>
-        <type>MENU_OPTICAL_DISKS</type>
-        <text>Disks</text>
-        <description>Play or import Blu-ray, DVD, and CDs</description>
-        <action>MENU optical_menu.xml</action>
     </button>
 
     <button>
@@ -70,7 +71,7 @@
     <button>
         <type>SETTINGS_GENERAL</type>
         <text>Extras</text>
-        <description>Information about your System</description>
+        <description>Informations sur le système</description>
         <action>MENU mms_settings.xml</action>
     </button>
 
@@ -84,7 +85,7 @@
     <button>
         <type>TV_SCHEDULE_RECORDINGS</type>
         <text>TV Guide</text>
-        <description>Pick programs to be recorded</description>
+        <description>Choisir des programmes à enregistrer</description>
         <action>MENU mms_guide.xml</action>
     </button>
 

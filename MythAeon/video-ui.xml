@@ -455,12 +455,12 @@
 		
 			        <textarea name="userratinglbl" from="directorlbl">
 			            <position>358,70</position>
-			            <value>Userrating:</value>
+			            <value>User Rating:</value>
 			        </textarea>
 		
 			        <textarea name="starslbl" from="directorlbl">
 			            <position>358,140</position>
-			            <value>Stars:</value>
+			            <value>Etoiles:</value>
 			        </textarea>
 		
                  <!-- widgets -->		
